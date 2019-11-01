@@ -1,0 +1,9 @@
+fedcb823ca53f01db36cbc2b5f7b77a7 *DESCRIPTION
+e2dfa62d25ff734e55b304969035a21d *NAMESPACE
+5e5d8e6fe5909e97c387e3b4e87e051a *R/assembly.R
+a8ce1ea128380804db0ff7d4af0752c0 *R/helpers.R
+ebb5c720cecf8f33c56f6f087eda2094 *R/methods.R
+853982ee9b28a77822d66e3459d9c7c3 *R/simulator.R
+8dd54b356101cf003506c423f71ceb20 *man/assembly.Rd
+56ed7f6fdb186fd01bd2928d9d350bd2 *man/helpers.Rd
+d16b987c3bcd5d742a78b82f0e5c7945 *man/sim.Rd
