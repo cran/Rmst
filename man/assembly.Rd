@@ -141,6 +141,7 @@ to put labels on routes and modules.
 }
 \examples{
 ## generate item pool
+set.seed(123456)
 items <- Rirt::model_mixed_gendata(1, n_3pl=200)$items
 
 ## Ex. 1: 1-2-2 MST, 2 panels, 20 items, topdown

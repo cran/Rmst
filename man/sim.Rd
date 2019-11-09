@@ -37,7 +37,7 @@ Use \code{theta} to set the initial theta, \code{panel} to select the MST panel,
 bounds of theta estimation, and \code{D} to set the scaling constant.
 }
 \examples{
-## assemble a MST
+set.seed(123456)
 items <- Rirt::model_mixed_gendata(1, n_3pl=150)$items
 x <- mst(items, "1-3", 2, 'topdown', len=20, max_use=1)
 x <- mst_objective(x, -1, indices=1)

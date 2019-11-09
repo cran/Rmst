@@ -1,7 +1,7 @@
 Package: Rmst
 Type: Package
 Title: Computerized Adaptive Multistage Testing
-Version: 0.0.1
+Version: 0.0.2
 Date: 2019-10-23
 Authors@R: c(person("Xiao", "Luo", role=c("aut","cre"), email="xluo1986@gmail.com"))
 Author: Xiao Luo [aut, cre]
@@ -19,6 +19,6 @@ Suggests: testthat
 RoxygenNote: 6.1.1
 Encoding: UTF-8
 NeedsCompilation: no
-Packaged: 2019-10-29 18:38:03 UTC; Luo.Xiao
+Packaged: 2019-11-09 15:23:44 UTC; Luo.Xiao
 Repository: CRAN
-Date/Publication: 2019-11-01 12:20:03 UTC
+Date/Publication: 2019-11-09 15:50:02 UTC
