@@ -140,6 +140,7 @@ and route information functions when \code{byroute=TRUE}. Use \code{label=TRUE}
 to put labels on routes and modules.
 }
 \examples{
+\donttest{
 ## generate item pool
 set.seed(123456)
 items <- Rirt::model_mixed_gendata(1, n_3pl=200)$items
@@ -149,10 +150,9 @@ items <- Rirt::model_mixed_gendata(1, n_3pl=200)$items
 x <- mst(items, "1-2-2", n_panels=2, method='topdown', test_len=10, max_use=1)
 x <- mst_objective(x, -1, indices=1:2)
 x <- mst_objective(x, 1, indices=3:4)
-x <- mst_assemble(x, 'lpsolve', time_limit=2)
+x <- mst_assemble(x, 'lpsolve', time_limit=30)
 plot(x, byroute=TRUE, label=TRUE)
 
-\donttest{
 ## Ex. 2: 1-2-3 MST, 2 panels, bottomup,
 ## remove two routes with large theta change: 1-2-6, 1-3-4
 ## 10 items in each module, content= and 3 items in content area 1 in each module

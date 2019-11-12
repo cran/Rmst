@@ -37,6 +37,7 @@ Use \code{theta} to set the initial theta, \code{panel} to select the MST panel,
 bounds of theta estimation, and \code{D} to set the scaling constant.
 }
 \examples{
+\donttest{
 set.seed(123456)
 items <- Rirt::model_mixed_gendata(1, n_3pl=150)$items
 x <- mst(items, "1-3", 2, 'topdown', len=20, max_use=1)
@@ -44,7 +45,7 @@ x <- mst_objective(x, -1, indices=1)
 x <- mst_objective(x,  0, indices=2)
 x <- mst_objective(x,  1, indices=3)
 x <- mst_stage_length(x, 1:2, min=5)
-x <- mst_assemble(x, 'lpsolve', time_limit=2)
+x <- mst_assemble(x, 'lpsolve', time_limit=30)
 
 sim1 <- mst_sim(x, true=.5)
 print(sim1)
@@ -53,4 +54,5 @@ plot(sim1)
 sim2 <- mst_sim(x, true=-.5, rdp=list('stage2'=c(-.44, .44)))
 print(sim2)
 plot(sim2)
+}
 }
